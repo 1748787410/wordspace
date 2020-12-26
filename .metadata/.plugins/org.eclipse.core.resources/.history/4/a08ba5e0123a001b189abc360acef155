@@ -1,0 +1,21 @@
+package Xltm;
+
+import java.util.Scanner;
+
+public class ForCycle {
+
+	public static void main(String[] args) {
+		
+		forcycle();
+	}
+
+	private static void forcycle() {
+		int e = new Scanner(System.in).nextInt();
+		for( int i = 1; i <= e; i++) {
+			for(int j = 1; j <= i; j++) {
+				System.out.println("*");
+			}
+		}
+		
+	}
+}

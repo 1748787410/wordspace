@@ -1,0 +1,30 @@
+package day07;
+//测试封装
+//一个。java文件里面可以有两个类，但是只能有一个类白public修饰
+
+
+public class student {
+
+	
+		String name;
+		int Years;
+		char gender;
+		private int id;
+		//6.提供公共的getXxx() - 获取id属性的值
+		public int getId( ){
+			return id;
+		}
+		public void setId(int a ){
+			id = a;
+			//5.提供公共的setXxx()-设置ID属性的值
+		}
+		
+//1,通过private实现封装	,private之后只能在本类中可见	
+		private void study() {
+			System.out.println("学习");
+		}//2.private封装后无法被外界访问，可以使用public的方法简介访问
+		public void sleep() {
+			study();//3.简介提供study()
+			System.out.println("睡觉");
+		}
+	}

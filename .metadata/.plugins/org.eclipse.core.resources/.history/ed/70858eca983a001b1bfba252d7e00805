@@ -1,0 +1,29 @@
+package day09;
+
+public class Test2Block {
+
+	public static void main(String[] args) {
+		new Person2();
+		
+	}
+}
+class Person2{
+	//TODO 构造代码块--new时触发
+	String eat;{
+		
+	}
+	private void sout() {
+		// TODO Auto-generated method stub
+		System.out.println(1);
+	}
+	
+	//TODO Constructor--new时触发
+	public Person2() {
+		System.out.println(3);
+	}
+	
+	//TODO 局部代码块--调用方法时才会触发
+	public void show() {
+		System.out.println(2);
+	}
+}

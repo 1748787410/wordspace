@@ -1,0 +1,17 @@
+package day07;
+
+public class Test4Construstor {
+
+	public static void main(String[] args) {
+		//创建person对象
+		Person p = new Person();
+	}
+}
+class Person{
+	//隐藏  构造方法
+	//TODO 提供构造方法
+	//修饰符 类名（[参数列表]）{方法体}
+	public Person() {
+		System.out.println(1);
+	}
+}

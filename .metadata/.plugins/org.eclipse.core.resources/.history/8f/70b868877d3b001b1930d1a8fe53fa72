@@ -1,0 +1,23 @@
+package day10;
+
+public class Test2Abstract {
+
+	public static void main(String[] args) {
+		
+		new zi2();
+	}
+}
+abstract class Fu2{
+	//抽象类里可以有--构造函数
+	//构造方法一般用来new，抽象类不能new
+	//
+	public void Fu2() {
+		System.out.println(1);
+	}
+} 
+class zi2 extends Fu2{
+	public zi2() {
+		super();
+		System.out.println(2);
+	}
+}

@@ -1,0 +1,16 @@
+package day07;
+//使用汽车类 作为模板
+public class Test2Car {
+
+	public static void main(){
+		//1使用模板Car
+		//通过new关键字 创建汽车对象
+		new Car();//匿名对象
+		//C 是引用类型的变量，默认值是null，但是现状存的是一个地址值
+		Car c = new Car();
+		c.run();
+		c.back();
+		//C调用.模板里的功能？？
+		} 
+}
+

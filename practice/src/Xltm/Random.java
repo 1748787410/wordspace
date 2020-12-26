@@ -1,0 +1,32 @@
+package Xltm;
+
+
+import java.util.Scanner;
+
+public class Random {
+
+	public static void main(String[] args) {
+		
+		System.out.println("输入1-100随机数字开始游戏");
+		int Ra = new java.util.Random().nextInt(100)+1;
+		
+		System.out.println();
+		
+		while(true){
+			int sc = new Scanner(System.in).nextInt();
+			
+			if(sc<Ra) {
+				System.out.println("太小了，再大点");
+			}else if(sc>Ra) {
+				System.out.println("太大了，再小点");
+			}else {
+				System.out.println("猜对了");
+				break;
+			}
+		}
+	}
+
+	
+		
+	
+}

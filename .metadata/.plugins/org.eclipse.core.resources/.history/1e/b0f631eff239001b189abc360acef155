@@ -1,0 +1,20 @@
+package day08;
+//测试 继承的  成员变量  的使用
+public class Test4Usetends {
+
+	public static void main(String[] args) {
+		
+	}
+}
+class fu{
+	
+}
+class zi extends fu{
+	int age = 10;
+	public void show() {
+		int age = 20;
+		System.out.println(age);//就近原则，使用局部变量age
+		
+		System.out.println(this.age);//使用成员变量age
+	}
+}

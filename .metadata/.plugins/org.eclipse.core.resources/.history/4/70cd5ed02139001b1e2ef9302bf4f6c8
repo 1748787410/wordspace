@@ -1,0 +1,12 @@
+package day07;
+
+import day07.student;
+
+public class Test3Student {
+
+	public static void main(String[] args) {
+		
+		student b = new student();
+		
+	}
+}

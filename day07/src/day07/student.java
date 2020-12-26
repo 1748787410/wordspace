@@ -1,0 +1,56 @@
+package day07;
+//测试封装
+//一个。java文件里面可以有两个类，但是只能有一个类白public修饰
+//总结：
+//1.把你想要隐藏的信息 加一个private 修饰
+//2.private后的资源，只能在本类中访问，，可以提供公共的set() get()
+//3.调用set()设置值，调用get()获取值
+
+public class student {
+
+	
+		private String name;
+		private int Years;
+		//7.使用eclipse自动提供set()  get()
+		//邮件 - Source - generate getters and setters
+		//--select all - OK
+		
+		private char gender;
+		public String getName() {
+			return name;
+		}
+		public void setName(String name) {
+			this.name = name;
+		}
+		public int getYears() {
+			return Years;
+		}
+		public void setYears(int years) {
+			Years = years;
+		}
+		public char getGender() {
+			return gender;
+		}
+		public void setGender(char gender) {
+			this.gender = gender;
+		}
+		//4.通过private实现封装属性
+		private int id;
+		//6.提供公共的getXxx() - 获取id属性的值
+		public int getId( ){
+			return id;
+		}
+		public void setId(int a ){
+			id = a;
+			//5.提供公共的setXxx()-设置ID属性的值
+		}
+		
+//1,通过private实现封装	,private之后只能在本类中可见	
+		private void study() {
+			System.out.println("学习");
+		}//2.private封装后无法被外界访问，可以使用public的方法简介访问
+		public void sleep() {
+			study();//3.简介提供study()
+			System.out.println("睡觉");
+		}
+	}

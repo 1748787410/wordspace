@@ -1,0 +1,20 @@
+package day08;
+
+public class Test1This {
+
+	public static void main(String[] args) {
+		new Penson().show();
+	}
+}
+class Penson {
+	int sum = 10;
+	int age = 20;
+	
+	public void show() {
+		int age = 10;
+		Penson p = new Penson();
+		System.out.println(p.age);
+		
+		System.out.println(sum);
+	}
+}

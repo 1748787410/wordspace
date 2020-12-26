@@ -1,0 +1,15 @@
+package day07;
+//创建汽车类 用来描述汽车事物
+public class Car {
+
+	String wheel;
+	String color;
+	double price;
+	
+	public void run() {
+		System.out.println("前进");
+	}
+	public void back() {
+		System.out.println("后退");
+	}
+}

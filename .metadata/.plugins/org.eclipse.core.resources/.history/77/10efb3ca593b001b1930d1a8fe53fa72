@@ -1,0 +1,42 @@
+package day09;
+
+import java.util.Scanner;
+
+public class Test6Exception {
+
+	public static void main(String[] args) {
+		method();//暴露异常
+		method2();//捕获异常
+		method3();//抛出异常
+	}
+
+private static void method3() {
+		// TODO Auto-generated method stub
+	int i = new Scanner(System.in).nextInt();
+	int j = new Scanner(System.in).nextInt();
+	
+	System.out.println(i/j);
+	}
+
+private static void method2() {
+		// TODO Auto-generated method stub
+	try {
+	int i = new Scanner(System.in).nextInt();
+	int j = new Scanner(System.in).nextInt();
+	    
+	System.out.println(i/j);
+	}catch(java.lang.ArithmeticException a) {
+		System.out.println("第二次输入不能为0");
+	}//catch() {
+		
+	}
+//}
+
+public static void method() {
+		//接受用户输入的两个整数，做除法
+	int i = new Scanner(System.in).nextInt();
+	int j = new Scanner(System.in).nextInt();
+	
+	System.out.println(i/j);
+	}
+}

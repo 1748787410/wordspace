@@ -1,0 +1,29 @@
+package day08;
+//测试继承的  成员方法  使用
+//子类：：：继承父类的，扩展自己的。改父类的
+public class Test5UseExtends {
+
+	public static void main(String[] args) {
+		zi2 e = new zi2();
+		e.show();
+		
+	}
+}
+
+class fu2{
+	public void show() {
+		int day = 12;
+		String name = "Mike";
+		int year = 17;
+		System.out.println(day);
+		System.out.println(year);
+	}
+}
+class zi2 extends fu2{
+	int age = 15;
+	private void jicheng() {
+		// TODO Auto-generated method stub
+		System.out.println(143+48);
+	}
+	//2.改父类的功能-- 方法的重写
+}

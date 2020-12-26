@@ -1,0 +1,17 @@
+package day07;
+
+import day07.student;
+
+public class Test3Student {
+
+	public static void main(String[] args) {
+		
+		student b = new student();
+		String name = "xxx";
+		int Years = 18;
+		char gender = 'ÄĞ';
+		int id = 123456;
+		
+		System.out.println(name);
+	}
+}

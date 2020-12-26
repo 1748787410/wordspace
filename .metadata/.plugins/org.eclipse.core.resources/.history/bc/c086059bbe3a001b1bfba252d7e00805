@@ -1,0 +1,29 @@
+package day09;
+//测试 多态
+public class Test4Duitai {
+
+	public static void main(String[] args) {
+		//创建子类对象 测试:
+		//子类能用父类继承来的，还可以自己扩展的
+		Dog d = new Dog();
+		d.eat();//子类的
+		d.sport();//父类的
+	}
+}
+//前提：继承+方法的重写
+//父类写共性的内容
+class Animal{
+	public void eat() {
+	System.out.println("吃肉");
+	
+	}
+	public void sport() {
+		System.out.println("walk");
+	}
+}
+class Dog extends Animal{
+		@Override//注解
+		public void sport() {
+		System.out.println("ball");
+	}
+}

@@ -1,0 +1,31 @@
+package Xltm;
+
+public class Teacher2 {
+
+	public static void main(String[] args) {
+		teacher f = new CGB();
+		teacher e = new Scala();
+		
+	}
+	
+}
+class teacher{
+	public void tre() {
+		String t = "老师";
+		String BK = "备课方式";
+	}
+}
+class CGB extends teacher{
+	public void cgb() {
+		String ta = "CGB老师";
+		String BK = "电子课件";
+		System.out.println("CGB老师喜欢用电子课件备课");
+	}
+}
+class Scala extends teacher{
+	public void scala() {
+		String tb = "Scala老师";
+		String BK = "手写笔记";
+		System.out.println("Scala老师喜欢手写笔记备课");
+	}
+}

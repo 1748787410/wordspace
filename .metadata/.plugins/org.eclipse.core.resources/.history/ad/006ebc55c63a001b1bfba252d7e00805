@@ -1,0 +1,31 @@
+package day09;
+//测试  多态的使用
+public class Test5UseDuotai {
+
+	public static void main(String[] args) {
+		//TODO 创建多态对象测试
+		//成员变量是
+		//成员方法是
+		fu1 f = new zi1();
+		System.out.println(f.name);
+		
+	}
+}
+
+class fu1{
+	String name = "老蔡"; 
+	public void sleep() {
+		System.out.println("睡觉");
+	}
+	public void sport() {
+		System.out.println("打球");
+	}
+}
+class zi1 extends fu1{
+	String name = "小蔡";
+	@Override
+	public void sleep() {
+		System.out.println("起床");
+	}
+	
+}

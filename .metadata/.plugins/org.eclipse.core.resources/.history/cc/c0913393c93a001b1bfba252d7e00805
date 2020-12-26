@@ -1,0 +1,18 @@
+package day09;
+
+import java.util.Scanner;
+
+public class Test6Exception {
+
+	public static void main(String[] args) {
+		method();//暴露异常
+	}
+
+public static void method() {
+		//接受用户输入的两个整数，做除法
+	int i = new Scanner(System.in).nextInt();
+	int j = new Scanner(System.in).nextInt();
+	
+	System.out.println(i/j);
+	}
+}

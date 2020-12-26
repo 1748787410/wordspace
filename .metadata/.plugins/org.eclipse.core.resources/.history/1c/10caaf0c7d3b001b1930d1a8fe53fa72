@@ -1,0 +1,21 @@
+package day10;
+
+public class Test2Abstract {
+
+	public static void main(String[] args) {
+		
+		new zi2();
+	}
+}
+abstract class Fu2{
+	//¹¹Ôìº¯Êý
+	public Fu2() {
+		System.out.println(1);
+	}
+} 
+class zi2 extends Fu2{
+	private void zi2() {
+		
+		System.out.println(2);
+	}
+}

@@ -1,0 +1,20 @@
+package day07;
+//测试封装
+//一个。java文件里面可以有两个类，但是只能有一个类白public修饰
+
+
+public class student {
+
+	
+		String name;
+		int Years;
+		char gender;
+		int id;
+		
+		public void study() {
+			System.out.println("学习");
+		}
+		public void sleep() {
+			System.out.println("睡觉");
+		}
+	}
